@@ -28,7 +28,7 @@ const middle = function(array) {
     middleOfArray.push(array[Math.floor((array.length - 1) / 2)]);
     middleOfArray.push(array[Math.floor(array.length / 2)]);
   }
-  return (middleOfArray);
+  return middleOfArray;
 };
 
 /* TEST CODE
