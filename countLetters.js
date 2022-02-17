@@ -11,5 +11,3 @@ const countLetters = function(string) {
 };
 
 module.exports = countLetters;
-
-// TEST CODE countLetters("lighthouse in the house");
