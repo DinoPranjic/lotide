@@ -1,25 +1,3 @@
-const eqArrays = function(firstArray, secondArray) {
-  let isIdentical = true;
-  if (firstArray.length !== secondArray.length) {
-    isIdentical = false;
-  } else {
-    for (let i = 0; i < firstArray.length; i++) {
-      if (firstArray[i] !== secondArray[i]) {
-        isIdentical = false;
-      }
-    }
-  }
-  return isIdentical;
-};
-
-const assertArraysEqual = function(array1, array2) {
-  if (eqArrays(array1, array2) === true) {
-    console.log(`👍👍👍Assertion passed: ${array1} === ${array2}`);
-  } else {
-    console.log(`❌❌❌Assertion failed: ${array1} !== ${array2}`);
-  }
-};
-
 const without = function(source, itemsToRemove) {
   let newArray = [...source];
 
@@ -30,8 +8,10 @@ const without = function(source, itemsToRemove) {
       }
     }
   }
-  return console.log(newArray);
+  return newArray;
 };
+
+module.exports = without;
 
 /* TEST CODE
 without([1, 2, 3], [1]);

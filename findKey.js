@@ -1,11 +1,3 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    return console.log(`👍👍👍 Assertion passed: ${actual} === ${expected}`);
-  } else {
-    return console.log(`❌❌❌ Assertion failed: ${actual} !== ${expected}`);
-  }
-};
-
 const findKey = function(object, callback) {
   let result = undefined;
   for (const key in object) {
@@ -17,7 +9,9 @@ const findKey = function(object, callback) {
   return result;
 };
 
-// TEST CODE
+module.exports = findKey;
+
+/*
 console.log(findKey({
   "Blue Hill": { stars: 1 },
   "Akaleri":   { stars: 3 },
@@ -35,3 +29,4 @@ assertEqual(findKey({
   "Ora":       { stars: 2 },
   "Akelarre":  { stars: 3 }
 }, x => x.stars === 2), "noma");
+*/

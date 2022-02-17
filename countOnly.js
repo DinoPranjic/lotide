@@ -1,11 +1,3 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    return console.log(`👍👍👍 Assertion passed: ${actual} === ${expected}`);
-  } else {
-    return console.log(`❌❌❌ Assertion failed: ${actual} !== ${expected}`);
-  }
-};
-
 const countOnly = function(allItems, itemsToRemove) {
   let result = {};
   for (const property in itemsToRemove) {
@@ -23,6 +15,8 @@ const countOnly = function(allItems, itemsToRemove) {
   }
   return result;
 };
+
+module.exports = countOnly;
 
 /* TEST CODE
 const firstNames = [
