@@ -11,5 +11,3 @@ const flatten = function(array) {
 };
 
 module.exports = flatten;
-
-// TEST CODE flatten([1, 2, [3, 4], 5, [6]]);

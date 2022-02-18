@@ -12,8 +12,4 @@ const letterPositions = function(string) {
 
 module.exports = letterPositions;
 
-/* TEST CODE
 console.log(letterPositions("lighthouse in the house"));
-console.log(letterPositions("hello"));
-assertArraysEqual(letterPositions("hello").e, [1]);
-*/
