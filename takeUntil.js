@@ -3,6 +3,7 @@ const takeUntil = function(array, callback) {
   for (const element of array) {
     if (!callback(element)) {
       results.push(element);
+      //pushes elements not fulfilling the callback
     } else {
       return results;
     }
