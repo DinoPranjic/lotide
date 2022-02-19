@@ -1,5 +1,5 @@
 const { countLetters } = require('../index');
-const assert = require('chai').assert
+const assert = require('chai').assert;
 
 describe('#countLetters', () => {
   it('returns proper count for "lighthouse in the house"', () => {
