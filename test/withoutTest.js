@@ -30,6 +30,15 @@ describe('#without', () => {
 
   });
 
+  it('takes in arrays with multiple instances of the same number', () => {
+    const nums = ["1", "1", "1", "2", "3", "1" , "1"];
+    const remove = ["1", 2, "3"];
+    const result = ["2"];
+
+    assert.deepEqual(without(nums, remove), result);
+
+  });
+
 });
 
 /* TEST CODE

@@ -1,5 +1,5 @@
 const middle = function(array) {
-  let middleOfArray = [];
+  const middleOfArray = [];
 
   if (array.length > 2 && array.length % 2 === 1) {
 
@@ -8,8 +8,7 @@ const middle = function(array) {
     
   } else if (array.length > 2 && array.length % 2 === 0) {
 
-    middleOfArray.push(array[Math.floor((array.length - 1) / 2)]);
-    middleOfArray.push(array[Math.floor(array.length / 2)]);
+    middleOfArray.push(array[Math.floor((array.length - 1) / 2)], array[Math.floor(array.length / 2)]);
     //returns two middle elements if array length is even
   }
   return middleOfArray;

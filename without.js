@@ -1,15 +1,13 @@
 const without = function(source, itemsToRemove) {
-  let newArray = [...source]; //copies source array into new array
+  const newArray = [];
 
-  for (let i = 0; i < newArray.length; i++) {
-    for (let j = 0; j < itemsToRemove.length; j++) {
-      if (newArray[i] === itemsToRemove[j]) {
-        newArray.splice(i, 1);
-        //removes element
-      }
+  for (const element of source) {
+    if (itemsToRemove.indexOf(element) === -1) {
+      newArray.push(element);
     }
   }
   return newArray;
+
 };
 
 module.exports = without;

@@ -1,5 +1,5 @@
 const letterPositions = function(string) {
-  let result = {};
+  const result = {};
   for (let i = 0; i < string.length; i++) {
     if (string[i] !== " " && result[string[i]]) {
       result[string[i]].push(i);

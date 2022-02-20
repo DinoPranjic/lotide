@@ -1,5 +1,5 @@
 const flatten = function(array) {
-  let newArray = [];
+  const newArray = [];
 
   for (let i = 0; i < array.length; i++) {
     if (typeof array[i] === 'number') {

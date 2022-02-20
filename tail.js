@@ -1,5 +1,5 @@
 const tail = function(array) {
-  let remainingElements = [...array].slice(1); //removes first element
+  const remainingElements = [...array].slice(1); //removes first element
 
   return remainingElements;
 };

@@ -1,5 +1,5 @@
 const countOnly = function(allItems, itemsToRemove) {
-  let result = {};
+  const result = {};
 
   for (const property in itemsToRemove) {
     if (itemsToRemove[property] === true) {
